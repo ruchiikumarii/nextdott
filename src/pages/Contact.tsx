@@ -1,8 +1,14 @@
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+
 export const Contact = () => {
   return (
-    <div className="pt-32 px-6 max-w-7xl mx-auto min-h-screen">
-      <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">Contact</h1>
-      <p className="text-xl text-ink/70">Get in touch with us.</p>
+    <div className="min-h-screen bg-paper text-ink flex flex-col">
+      <Navbar />
+      <main className="flex-1 flex items-center justify-center pt-24">
+        <h1 className="text-4xl md:text-6xl font-display font-medium tracking-tight">Contact</h1>
+      </main>
+      <Footer />
     </div>
   );
 };

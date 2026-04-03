@@ -4,8 +4,17 @@ export const Insights = () => {
       {/* Winding Connecting Line */}
       <div className="absolute inset-0 pointer-events-none flex justify-center z-0 hidden md:flex">
         <div className="w-full max-w-7xl relative">
-          <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-            <path d="M 33.33 0 C 33.33 20, 41.66 20, 41.66 45 C 41.66 70, 50 70, 50 100" stroke="currentColor" strokeWidth="1" fill="none" vectorEffect="non-scaling-stroke" className="text-blue-500/30" />
+          <svg className="absolute inset-0 w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
+            <path 
+              d="M 40 0 C 40 30, 50 30, 50 60 C 50 80, 50 80, 50 100" 
+              stroke="#00E5FF" 
+              strokeWidth="6" 
+              fill="none" 
+              vectorEffect="non-scaling-stroke" 
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{ filter: 'drop-shadow(0 0 8px rgba(0,229,255,0.6))' }}
+            />
           </svg>
         </div>
       </div>

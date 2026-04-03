@@ -5,17 +5,23 @@ import { Platforms } from "../components/Platforms";
 import { Insights } from "../components/Insights";
 import { Testimonial } from "../components/Testimonial";
 import { CTASection } from "../components/CTASection";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
-    <>
-      <Hero />
-      <CapabilitiesGrid />
-      <SuccessStories />
-      <Platforms />
-      <Insights />
-      <Testimonial />
-      <CTASection />
-    </>
+    <div className="relative min-h-screen bg-paper text-ink selection:bg-blue-500/30 selection:text-ink">
+      <Navbar />
+      <main>
+        <Hero />
+        <CapabilitiesGrid />
+        <SuccessStories />
+        <Platforms />
+        <Insights />
+        <Testimonial />
+        <CTASection />
+      </main>
+      <Footer />
+    </div>
   );
 };
