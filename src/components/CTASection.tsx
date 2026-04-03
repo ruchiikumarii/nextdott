@@ -4,19 +4,10 @@ export const CTASection = () => {
       {/* Winding Connecting Line */}
       <div className="absolute inset-0 pointer-events-none flex justify-center z-0 hidden md:flex">
         <div className="w-full max-w-7xl relative">
-          <svg className="absolute inset-0 w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
-            <path 
-              d="M 95 0 C 95 30, 50 30, 50 88" 
-              stroke="#00E5FF" 
-              strokeWidth="6" 
-              fill="none" 
-              vectorEffect="non-scaling-stroke" 
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ filter: 'drop-shadow(0 0 8px rgba(0,229,255,0.6))' }}
-            />
+          <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+            <path d="M 95 0 C 95 50, 52 50, 52 88" stroke="currentColor" strokeWidth="1" fill="none" vectorEffect="non-scaling-stroke" className="text-blue-500/30" />
           </svg>
-          <div className="absolute top-[88%] left-[50%] w-4 h-4 -ml-[8px] -mt-[8px] rounded-full bg-[#00E5FF] shadow-[0_0_16px_rgba(0,229,255,1)]" />
+          <div className="absolute top-[88%] left-[52%] w-3 h-3 -ml-[6px] -mt-[6px] rounded-full bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.8)]" />
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">

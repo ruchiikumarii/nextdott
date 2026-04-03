@@ -15,7 +15,7 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "About Us", href: "/about-us" },
+    { name: "About Us", href: "/about" },
     { name: "What We Do", href: "/what-we-do" },
     { name: "AI Capability Centre", href: "/ai-capability-centre" },
     { name: "Blogs", href: "/blogs" },
@@ -89,12 +89,12 @@ export const Navbar = () => {
             className="fixed inset-0 bg-white z-[60] p-6 flex flex-col"
           >
             <div className="flex justify-between items-center mb-12">
-              <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-ink rounded-xl flex items-center justify-center">
                   <div className="w-3 h-3 bg-paper rounded-full" />
                 </div>
                 <span className="font-display font-semibold text-xl tracking-tight">Nextdot</span>
-              </Link>
+              </div>
               <button onClick={() => setIsOpen(false)} className="p-2 bg-surface rounded-full">
                 <X size={24} />
               </button>

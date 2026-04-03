@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import { motion, AnimatePresence } from "motion/react";
 import { Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 import { ScrollProgress } from "./components/ScrollProgress";
 import { Cursor } from "./components/Cursor";
-
 import { Home } from "./pages/Home";
 import { AboutUs } from "./pages/AboutUs";
 import { WhatWeDo } from "./pages/WhatWeDo";
@@ -70,14 +71,18 @@ export default function App() {
       </AnimatePresence>
 
       <div className="noise-overlay" />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/what-we-do" element={<WhatWeDo />} />
-        <Route path="/ai-capability-centre" element={<AICapabilityCentre />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/what-we-do" element={<WhatWeDo />} />
+          <Route path="/ai-capability-centre" element={<AICapabilityCentre />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }
